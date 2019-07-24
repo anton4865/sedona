@@ -42,6 +42,25 @@ h2{
 	color:#cacaca;
 }
 
+.wallpaper{
+	background:  url(img/text.png) no-repeat;
+	/*background-repeat: ;*/
+
+}
+
+.features-list li:nth-child(1){
+	background-image: url(svg/icon-1.svg);
+	background-repeat: no-repeat;
+}
+.features-list li:nth-child(2){
+	background-image: url(svg/icon-2.svg);
+	background-repeat: no-repeat;
+}
+.features-list li:nth-child(3){
+	background-image: url(svg/icon-3.svg);
+	background-repeat: no-repeat;
+}
+
 .features-list,
 .fact-list{
 	list-style: none;
