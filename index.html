@@ -3,6 +3,8 @@
 		 	<head>
 		 		<meta charset="UTF-8">
 		 		<title>Sedona</title>
+		 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+		 		<link rel="stylesheet" href="style.css">
 		 	</head>
 		 	<body>
 		 		<header class="main-header">
@@ -10,7 +12,7 @@
 		 				<ul class="site-navigation">
 		 					<li><a href="info.html">Информация</a></li>
 		 					<li><a href="foto.html">Фото и видео</a></li>
-		 					<li><a href="index.html"><img src="img/logo.png" alt=""></a></li>
+		 					<li><a href="index.html">Лого</a></li>
 		 					<li><a href="map.html">Карта штата</a></li>
 		 					<li><a href="hotel.html">Гостиницы</a></li>
 		 				</ul>
@@ -19,9 +21,11 @@
 		 		</header>
 		 		<main class="container">
 		 			<section class="wallpaper">
-		 				<img src="img/mounts.jpg" alt="Фон" width="1200">
-		 				<img src="img/text.png" alt="">
-
+		 				<img src="#" alt="Фон">
+		 				<img src="#" alt="текст">
+		 				<img src="#" alt="текст">
+		 				<img src="#" alt="текст">
+		 				<img src="" alt="текст">
 		 			</section>
 
 		 			<section class="content">
@@ -32,40 +36,40 @@
 			 				</p>
 		 				</div>
 
-		 				<div class="item-list">
-		 					<div class="text" >
+		 				<div class="reason">
+		 					<div class="reason-text" >
 		 						<h2>Настоящий городок</h2>
 		 						<p>-№1-</p>
 		 						<p>Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
 		 						
 		 					</div>
 
-		 					<img src="img/flags.jpg" alt="фон" width="800" height="400">		 					
+		 					<img src="" alt="фон">		 					
 		 				</div>
 
 		 				<div>
-		 					<ul>
+		 					<ul class="features-list">
 		 						<li>
 		 							<img src="" alt="">
-		 							<p>Жилье</p>
+		 							<h2>Жилье</h2>
 		 							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 		 						</li>
 		 						<li>
 		 							<img src="" alt="">
-		 							<p>Еда</p>
+		 							<h2>Еда</h2>
 		 							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 		 						</li>
 		 						<li>
 		 							<img src="" alt="">
-		 							<p>Сувениры</p>
+		 							<h2>Сувениры</h2>
 		 							<p>Не только китайского, но и местного производства</p>
 		 						</li>
 		 					</ul>
 		 				</div>
 						
-						<div class="item-list">
+						<div class="reason">
 
-							<img src="img/canyon.jpg" alt="фон" width="800" height="400">	
+							<img src="" alt="фон">	
 
 		 					<div class="text" >
 		 						<h2>Там есть мост дьявола</h2>
@@ -79,20 +83,20 @@
 
 
 
-		 				<div>
-		 					<ul>
+		 				<div class="reason">
+		 					<ul class="reason-list">
 		 						<li>
-		 							<p>Небольшая площадь</p>
+		 							<h2>Небольшая площадь</h2>
 		 							<p>-№3-</p>
 		 							<p>Все достопримечательности находятся очень близко</p>
 		 						</li>
 		 						<li>
-		 							<p>Красивая дорога</p>
+		 							<h2>Красивая дорога</h2>
 		 							<p>-№4-</p>
 		 							<p>Ехать в седону из лас-вегаса совсем не скучно!</p>
 		 						</li>
 		 						<li>
-		 							<p>Мало туристов</p>
+		 							<h2>Мало туристов</h2>
 		 							<p>-№5-</p>
 		 							<p>Большинство едет в гранд каньон и толпится там</p>
 		 						</li>
@@ -104,16 +108,38 @@
 
 		 			<section class="booking">
 		 				<div class="booking-text">
-		 					<p>Заинтересовались?</p>
+		 					<h2>Заинтересовались?</h2>
 		 					<p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-		 					<button>Поиск гостиницы в седоне</button>		
+		 					<button class="button">Поиск гостиницы в седоне</button>		
 		 				</div>
 
 		 				<div class="booking-forms">
 		 					
-		 					<!--Здесь будет форма-->
+		 				<form action="https://echo.htmlacademy.ru" method="get">
+							<fieldset>	
+							    <label for="date-come">
+									Дата заезда <input type="month" id="date-come">
+								</label>
+								<br>
+								<label for="date-leave">
+									Дата выезда <input type="month" id="date-leave">
+								</label>
+								</fieldset>
+								<fieldset>
+								<br>
+								<label for="date-leave">
+									Взрослые <input type="number" id="number-adult">
+								</label>
+								<br>
+								<label for="date-leave">
+									Дети <input type="number" id="number-kids">
+								</label>
+								</fieldset>
+
+
+							</form>
 		 					
-		 					<button>Найти</button>
+		 					<button class="button found">Найти</button>
 		 					
 		 				</div>		 				
 		 			</section>
